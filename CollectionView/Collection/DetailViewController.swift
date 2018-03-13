@@ -35,12 +35,12 @@ class DetailViewController: UIViewController {
     }
     
     @IBAction func checkOutAction(_ sender: Any) {
-        let actionController = UIAlertController(title: "Hello guy!", message: "What do you want to buy!", preferredStyle: .actionSheet)
-        let okAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
-        actionController.addAction(okAction)
-        let cancelAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
-        actionController.addAction(cancelAction)
-        present(actionController, animated: true, completion: nil)
+//        let actionController = UIAlertController(title: "Hello guy!", message: "What do you want to buy!", preferredStyle: .actionSheet)
+//        let okAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+//        actionController.addAction(okAction)
+//        let cancelAction = UIAlertAction(title: "Ok", style: .default, handler: nil)
+//        actionController.addAction(cancelAction)
+//        present(actionController, animated: true, completion: nil)
     }
     
     var menu: Menu?
