@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7kd-tS-w4C">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Second View Controller-->
+        <scene sceneID="MQD-Io-jqd">
+            <objects>
+                <viewController id="7kd-tS-w4C" customClass="SecondViewController" customModule="CollectionView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GCy-uC-C08">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NcM-W5-AtM">
+                                <rect key="frame" x="0.0" y="64" width="375" height="505"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="EJl-mU-dAE">
+                                <rect key="frame" x="177.5" y="108" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="KPw-25-VkA"/>
+                                    <constraint firstAttribute="height" constant="20" id="eVJ-yF-f6Z"/>
+                                </constraints>
+                                <color key="color" red="0.8553497779" green="0.042989747619999998" blue="0.076846097380000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="EJl-mU-dAE" firstAttribute="top" secondItem="mnh-EP-gm2" secondAttribute="top" constant="44" id="6rk-T8-ts2"/>
+                            <constraint firstItem="mnh-EP-gm2" firstAttribute="trailing" secondItem="NcM-W5-AtM" secondAttribute="trailing" id="NbQ-Fu-08s"/>
+                            <constraint firstItem="NcM-W5-AtM" firstAttribute="leading" secondItem="mnh-EP-gm2" secondAttribute="leading" id="UOK-VI-Qip"/>
+                            <constraint firstItem="mnh-EP-gm2" firstAttribute="bottom" secondItem="NcM-W5-AtM" secondAttribute="bottom" id="bR3-bc-8dB"/>
+                            <constraint firstItem="NcM-W5-AtM" firstAttribute="top" secondItem="mnh-EP-gm2" secondAttribute="top" id="f2x-ZB-ap8"/>
+                            <constraint firstItem="EJl-mU-dAE" firstAttribute="centerX" secondItem="GCy-uC-C08" secondAttribute="centerX" id="rJa-jU-8Lg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mnh-EP-gm2"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" systemItem="history" id="836-gH-0Pt">
+                        <color key="badgeColor" red="0.8553497779" green="0.042989747619999998" blue="0.076846097380000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="activityIndicator" destination="EJl-mU-dAE" id="enb-jU-ubj"/>
+                        <outlet property="secondImageView" destination="NcM-W5-AtM" id="TzX-G9-CjN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JLv-zw-BcR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2946" y="447"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kTt-oZ-sCt">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First View Controller-->
+        <scene sceneID="PeI-r9-Qhf">
+            <objects>
+                <viewController id="kTt-oZ-sCt" customClass="FirstViewController" customModule="CollectionView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ucg-pq-r2E">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="9gr-h6-e6k">
+                                <rect key="frame" x="177.5" y="108" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="7Nj-cj-CMG"/>
+                                    <constraint firstAttribute="width" constant="20" id="bLM-6E-KR1"/>
+                                </constraints>
+                                <color key="color" red="0.8553497779" green="0.042989747619999998" blue="0.076846097380000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RRc-Hq-vjB">
+                                <rect key="frame" x="0.0" y="64" width="375" height="505"/>
+                            </imageView>
+                        </subviews>
+                        <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="RRc-Hq-vjB" firstAttribute="bottom" secondItem="fDu-pz-Xcx" secondAttribute="bottom" id="2ck-vp-aZK"/>
+                            <constraint firstItem="RRc-Hq-vjB" firstAttribute="leading" secondItem="fDu-pz-Xcx" secondAttribute="leading" id="2jC-vQ-lyR"/>
+                            <constraint firstItem="9gr-h6-e6k" firstAttribute="centerX" secondItem="Ucg-pq-r2E" secondAttribute="centerX" id="HBY-bC-kJp"/>
+                            <constraint firstItem="9gr-h6-e6k" firstAttribute="top" secondItem="fDu-pz-Xcx" secondAttribute="top" constant="44" id="N7N-jh-IPV"/>
+                            <constraint firstItem="RRc-Hq-vjB" firstAttribute="trailing" secondItem="fDu-pz-Xcx" secondAttribute="trailing" id="eLL-kt-dC6"/>
+                            <constraint firstItem="RRc-Hq-vjB" firstAttribute="top" secondItem="fDu-pz-Xcx" secondAttribute="top" id="jx1-hX-bPK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fDu-pz-Xcx"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="downloads" id="u7A-be-FfU">
+                        <color key="badgeColor" red="0.8553497779" green="0.042989747619999998" blue="0.076846097380000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="activityIndicator" destination="9gr-h6-e6k" id="dKp-tC-gyw"/>
+                        <outlet property="imageView" destination="RRc-Hq-vjB" id="Ste-As-Zbt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tlg-wr-IVD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2944.8000000000002" y="-219.04047976011995"/>
+        </scene>
+    </scenes>
+</document>
